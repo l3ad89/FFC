@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+#frntPic {
+	width: 25%;
+	height: 25%;
+}
+
+#poolPic {
+	width: 40%;
+	height: 25%;	
+}
+
+#paragraph {
+	margin-left: 25%;
+	width: 50%;
+	height: 50%;
+	text-align: center;	
+}
+
