@@ -14,12 +14,14 @@
 <body>
  <div data-role="page" id="home">
 		<div data-role="header">
+        	<a href="#home" data-icon="back">Back</a>
 			<h1 id="mainHeading"><center>Family Fitness Center</center></h1>
+            <a data-icon="home" href="#home">Home</a>
 		</div>
 		
 		<div data-role="content" id="noteArea">
         <center><img src="resources/logo.png" /></center>
-        <center><a href="#aboutUs" data-role="button" data-inline="true">General Information</a></center>
+        <center><a href="#generalInformation" data-role="button" data-inline="true">General Information</a></center>
 		<center><a href="#pricingandHours" data-role="button" data-inline="true">Pricing/Hours of Operation</a></center>
 		<center><a href="#groupFitness" data-role="button" data-inline="true">Group Fitness</a></center>
 		</div>
@@ -27,8 +29,10 @@
     
     <div data-role="page" id="pricingandHours">  
     
-    	<div data-role="header">  
+    	<div data-role="header">              
+            <a href="#home" data-icon="back">Back</a>
     		<h1>Pricing and Hours Of Operation</h1>
+            <a href="#home" data-icon="home">Home</a>
     	</div>
         
         <div data-role="content">
@@ -73,8 +77,10 @@
     
     <div data-role="page" id="aboutUs">
     
-    	<div data-role="header">  
+    	<div data-role="header">
+        	<a href="#generalInformation" data-icon="back">Back</a>
     		<h1>About Us</h1>
+            <a href="#home" data-icon="home">Home</a>  
     	</div>
     	
         <div data-role="content">
@@ -83,11 +89,11 @@
         
         <center><img src="resources/bldgFront.jpg" id="frntPic"/></center>
         
-        <div id="paragraph">
-        <p>Whether you want to spend the day with your family swimming in one of our two indoor, heated, pools, shooting hoops with your son, or just want to spend a couple hours working out in our state of the art fitness center.</p>
-        
+        <div id="paragraph" data-inset="true">
+        <p data-inset="true">Whether you want to spend the day with your family swimming in one of our two indoor, heated, pools, shooting hoops with your son, or just want to spend a couple hours working out in our state of the art fitness center.</p>
+        </div>
         <center><img src="resources/pool.jpg" id="poolPic" /></center>
-        
+        <div data-inset="true">
         <p>The Somerset Family Fitness Center is available for anybody in the community to use regardless of membership status. To ensure that everyone in our community can use our facility we offer daily guest passes that give you all of the perks of being a member including participation in any of our over 60 fitness classes, year round use of our two indoor pools, relaxing in our sauna, steam room, and whirlpool, use of our weight room, and more all for a nominal fee. </p>   
         </div>
     
@@ -97,7 +103,9 @@
     <div data-role="page" id="groupFitness">
     	
         <div data-role="header">
+        	<a href="#home" data-icon="back">Back</a>
         	<h1>Group Fitness</h1>
+            <a href="#home" data-icon="home">Home</a>
         </div>
     	
         <div data-role="content">
@@ -105,10 +113,10 @@
         	<h2><center>Group Fitness</center></h2>            
             <p><center>There is a fitness class for everyone at the Somerset Family Fitness Center.</center></p>
             <hr />
-            <ul data-role="listview">
+            <ul data-role="listview" data-inset="true">
             	<li><a href="#fitnessClasses">Fitness Classes</a></li>
             	<li><a href="#aquaticClasses">Aquatic Fitness</a></li>
-                <li><a href="">Silver Sneakers</a></li>
+                <li><a href="#silverSneakers">Silver Sneakers</a></li>
             </ul>
         	
         </div>
@@ -118,12 +126,14 @@
     <div data-role="page" id="fitnessClasses">
     	
         <div data-role="header">
+        	<a href="#groupFitness" data-icon="back">Back</a>
         	<h1><center>Fitness Classes</center></h1>
+            <a href="#home" data-icon="home">Home</a>
         </div>
         
         <div data-role="content">
         
-        	<ul data-role="listview">
+        	<ul data-role="listview" data-inset="true">
             	
                 <li><b>Cardio Mixer</b>
                 <p>A combination of hi/lo aerobics, step, dance, thera-bands, weights, cycling, and stretching. If you're                looking to work up a sweat then this is the class for you.</p></li>
@@ -150,11 +160,14 @@
     
     <div data-role="page" id="aquaticClasses">
     	<div data-role="header">
+        	<a href="#groupFitness" data-icon="back">Back</a>
         	<h1>Aquatic Classes</h1>
+            <a href="#home" data-icon="home">Home</a>
         </div>
         
         <div data-role="content">
         	
+            
             <ul data-role="listview">
             	<li><b>One-On-One Swimming Lessons</b>
                 <p>One-on-one swimming lessons are currently available by appointment. Please call to schedule swimming                lessons today!</p></li>
@@ -166,13 +179,97 @@
                 <p>This class is designed to help you improve the funcation and performance of your daily tasks, mobility,                independence, flexibility, balance, and coordination. This class is held in our heated therapy pool, is                taught by a certified AFAP instructor, and is great for beginners and those suffering from Arthritis,                Fibromyalgia, and MS.</p></li>
                 <li><b>Senior Splash</b>
                 <p>A water fitness class that can be as hard, or as easy, as you want to make it. Held in our heated therapy                pool this class focuses on cardio, flexibility, and balance. A great class for arthritis and fibromyalgia                sufferers.</p></li>
-            </ul>
+            </ul>       	
+        </div>   
+    </div>
+    
+    <div data-role="page" id="silverSneakers">
+    	<div data-role="header">
+        	<a href="#groupFitness" data-icon="back">Back</a>
+        	<h1>Silver Sneakers</h1>
+            <a href="#home" data-icon="home">Home</a>
+        </div>
+        
+        <div data-role="content">
         	
+            <center><img src="resources/silverSneakers.jpg" id="silverSneakersPic" /></center>
+            
+            <p>Somerset Family Fitness Center is excited to offer the SilverSneakers Fitness Program, the nation's leading 				             exercise program designed exclusively for older adults.  SilverSneakers includes an unlimited, free,             membership that includes the use of the fitness equipment, indoor pools, fitness classes, and other amenities, 		             optional low-impact SilverSneakers classes taught by certified instructors, monthly social events and much             more!</p>
+            <p>Have fun and move to the music through a variety of exercises designed to increase muscular strength, range            of movement, and activity for daily living skills. Hand held weights, elastic tubing with handles, and a ball            are offered for resistance; and a chair is used for seated and/or standing support.</p>
+            <p>This program is designed to provide a fun and challenging way for you to continue the lifelong journey of            holistic health.  The program is easily personalized to address multiple fitness levels and differences in            health needs.
+            Contact us to find out if your Supplemental Medicare health plan includes SilverSneakers at no additional cost            to you.</p>       
+        </div>    
+    </div>
+	
+    <div data-role="page" id="generalInformation">
+    
+    	<div data-role="header">
+        	<a href="#home" data-icon="back">Back</a>
+            <h1>General Information</h1>
+            <a href="#home" data-icon="home">Home</a>
+        </div>
+        
+        <div data-role="content">
+        	
+        	<ul data-role="listview" data-inset="true">
+            	<li><a href="#aboutUs"><b>About Us</b>
+                <p>General Information About The Facility and Activities</p></a></li>
+                <li><a href="#facilityPolicies"><b>Facility Policies</b>
+                <p>General Facility Policies</p></a></li>
+                <li><a href=""><b>Facility Rental</b>
+                <p>Information about when you can rent the Somerset Famile Fitness Center andhow much it costs.</p></a></li>
+				<li><a href=""><b>Contact Us</b>
+                <p>Send us an email or give us a call if you have any questions or comments</p></a></li>                
+            </ul>        	
+        </div>    
+    </div>
+    
+    <div data-role="page" id="facilityPolicies">
+    
+    	<div data-role="header">
+        	<a href="#generalInformation" data-icon="back">Back</a>
+            <h1>Facility Policies</h1>
+            <a href="#home" data-icon="home">Home</a>
+        </div>
+        
+        <div data-role="content">
+        	
+            <p>Welcome to the SomersetFamilyFitnessCenter, we are so glad you are here! Everyone who enters our facility is            considered a valuable member of our SFFC family. This includes the people in our many programs, the volunteers            who donate their time and talents, those who support us throughout the community and, of course all of our            valued members. Whatever your goals may be by joining our facility, our staff wants to help you achieve them!</p>
+            <h2><center>Member Services and Amenities</center></h2> 
+            
+            <p>Members of our facility have full access to our weight room, gymnasium, outdoor walking track, basketball            court, Kid Zone, swimming pools, hot tub, sauna, steam room, and non-fee based fitness classes. Additionally,            you will receive discounted rates on most of our fee based classes and an annual allotment of guest passes to            share with family and friends.</p>  
+            
+            <h2><center>Locker Rental</center></h2>
+            
+            <p>Members may rent a small locker for $5 monthly or a large locker for $10 per month. Locks are provided by the            facility or if you choose to do so, you may provide your own lock. Locker rental fees can be added to your            monthly e-pay membership fee, or you may pay your locker fee quarterly at the front desk. If fees are not paid,            personal belongings and lock will be removed from the locker.</p>   
+            <p>There are also lockers reserved for day use at no charge. Personal locks and belongings not removed by the            end of the day will be removed.</p>    
+            
+            <h2><center>Kid Zone</center></h2>
+            
+            <p>Our kid zone is a supervised play area where your children can play safely for up to 2 hours while you are            using our facility. All of our friendly Kid Zone staff members are certified in CPR and first aid to ensure each            child's safety.</p>
+            
+            <h4><center>Kid's Zone Hours</center></h4>
+            
+            <p><b>Monday:</b>             8:00 AM - 12:00 PM and 3:30 PM - 8:30 PM</p>
+            <p><b>Tuesday-Thursday:</b>   8:00 AM - 12:00 PM and 3:30 PM - 8:00 PM</p>
+            <p><b>Friday:</b>             8:00 AM - 12:00 PM and 3:30 PM - 7:30 PM</p>
+            <p><b>Saturday:</b>           9:00 AM - 12:00 PM</p>
+            
+            <h4>Kid's Zone Rules</h4>
+            	
+                <ul>
+                	<li>Each child may remain in the kid zone for up to 2 hours.</li>
+                    <li>Parents MUST remain in our facility at all times while your children are using the Kid Zone.</li>
+                    <li>With the exception of baby bottles, no food or drink is permitted in the Kid Zone.</li>                  	<li>Parents must sign their children in and out when entering or leaving the Kid Zone.</li>
+                    <li>For the health and safety of everyone, we ask that you do not leave your child in Kid Zone if he/she                    is experiencing any symptoms of illness (fever, rash, runny nose, diarrhea, etc.).</li>
+                    <li>Children that consistently disobey or exhibit hostility towards other children and staff may be                    temporally suspended. Parents will receive written warnings before such action is taken.</li>
+            	</ul>
         </div>
     
     
     </div>
-
+    
+    
 
 </body>
 </html>
