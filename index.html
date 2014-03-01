@@ -3,10 +3,11 @@
 <head>
  <title>Family Fitness Center</title>
  </head>
-  <link rel="stylesheet" href="style.css">
+  
  <link rel="stylesheet" href="themes/ffc.css" />
  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile.structure-1.4.1.min.css" /> 
+ <link rel="stylesheet" href="style.css">
  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
  <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
 </head>
@@ -20,10 +21,15 @@
 		</div>
 		
 		<div data-role="content" id="noteArea">
+        
         <center><img src="resources/logo.png" /></center>
-        <center><a href="#generalInformation" data-role="button" data-inline="true">General Information</a></center>
-		<center><a href="#pricingandHours" data-role="button" data-inline="true">Pricing/Hours of Operation</a></center>
-		<center><a href="#groupFitness" data-role="button" data-inline="true">Group Fitness</a></center>
+        <br />
+        <div data-role="controlgroup">
+        <a href="#generalInformation" data-role="button">General Information</a>
+		<a href="#pricingandHours" data-role="button">Pricing/Hours of Operation</a>
+		<a href="#groupFitness" data-role="button">Group Fitness</a>
+        <a href="#membership" data-role="button">Memberships</a>
+        </div>
 		</div>
 	</div>
     
@@ -407,6 +413,69 @@
                     </div>                   
                 </div>
         </div>    
+    </div>
+    
+    <div data-role="page" id="membership">
+    
+    <div data-role="header">
+    	<a href="#home" data-icon="back">Back</a>
+        <h1>Memberships</h1>
+        <a href="#home" data-icon="home">Home</a>
+    </div>
+    
+    <div data-role="content">
+    
+    <div align="center" data-inset="true">
+    <table cellpadding="25%" style="text-align:center">
+    	<tr>
+        	<td style="text-decoration:underline"><b>Type</b></td>
+            <td style="text-decoration:underline"><b>Joining Fee</b></td>
+            <td style="text-decoration:underline"><b>Membership Fee</b></td>
+        </tr>
+        <tr>
+        	<td>Single Adult</td>
+            <td>$45</td>
+            <td>$45</td>
+        </tr>
+        <tr>
+        	<td>Family</td>
+            <td>$60</td>
+            <td>$60</td>
+        </tr>
+        <tr>
+        	<td>Full-Time College Student</td>
+            <td>$10</td>
+            <td>$35</td>
+        </tr>
+        <tr>
+        	<td>Senior Adult</td>
+            <td>$35</td>
+            <td>$35</td>
+        </tr>
+        <tr>
+        	<td>Senior Family</td>
+            <td>$50</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+        	<td>Youth</td>
+            <td>$20</td>
+            <td>$20</td>
+        </tr>    
+        <tr>
+        	<td>Therapy Pool Only</td>
+            <td>$10</td>
+            <td>$25</td>
+        </tr>
+        <tr>
+        	<td>SilverSneakers</td>
+            <td>Free With Qualifying Insurance</td>
+            <td>Free With Qualifying Insurance</td>
+        </tr>
+    </table>  	
+    <p>Somerset Family Fitness Center offers reduced membership fees based on household income. Applications for financial   assistance are available at the front desk or available to print from your computer and fill out at your convenience.</p>
+    </div>
+    </div>    
     </div>
     
     
